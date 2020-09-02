@@ -1,6 +1,5 @@
 import React from 'react';
 import PORTFOLIO_DATA from './data.js';
-import { Row, Col, Divider } from 'antd';
 import styled from 'styled-components'
 
 //Partials
@@ -10,28 +9,33 @@ import Wrapper from './Partials/Wrapper';
 import Section from './../../Components/Section/';
 import Card from './../../Components/Card/';
 
-const Filler = styled.div`
-    background-color: green;
-    padding: 10px 0;
+const Title = styled.div`
+    font-size: 4rem;
+    color: white;
+    font-weight: 800;
+    margin: 0 20px;
+
+    @media screen and (max-width: 975px) {
+     margin: 40px 0px;
+}
 `
 
 const Portfolio = () => {
     return (
         <Section bgColor={'black'}>
-            <Section bgColor={'black'}>
-                <Wrapper>
-                    {PORTFOLIO_DATA.map(item => {
-                        return (
-                            <Card
-                                title={item.title}
-                                description={item.description}
-                                link={item.link}
-                            />
-                        )
-                    })}
+            <Wrapper><Title>Portfolio</Title></Wrapper>
+            <Wrapper>
+                {PORTFOLIO_DATA.map((item, i) => {
+                    return (
+                        <Card
+                            title={item.title}
+                            description={item.description}
+                            link={item.link}
+                        />
+                    )
+                })}
 
-                </Wrapper>
-            </Section>
+            </Wrapper>
         </Section>
     )
 }
