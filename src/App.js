@@ -8,6 +8,7 @@ import Intro from './Sections/Header';
 import About from './Sections/About/';
 import Portfolio from './Sections/Portfolio/';
 import Contact from './Sections/Contact/';
+import FooterContent from './Sections/FooterContent/';
 
 
 const { Header, Footer, Content } = Layout;
@@ -26,7 +27,7 @@ const App = () => {
         <Portfolio />
         <Contact />
       </Content>
-      <Footer>Footer</Footer>
+      <Footer><FooterContent /></Footer>
     </Layout>
   );
 }
