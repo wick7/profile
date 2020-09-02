@@ -1,30 +1,59 @@
 import React from 'react'
-import { useSpring, animated } from 'react-spring'
-import './style.css'
 import styled from 'styled-components'
 
-const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
-const trans = (x, y, s) => `perspective(900px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
-const CardContent = styled.div`
-    flex-direction: column;
-    padding: 20px;
-`
-const CardRow = styled.div`
-    flex-direction: row;
-    padding: 20px;
+const Container = styled.div`
+     color:white;
+  padding: 20px;
+  margin: 0 20px;
+  width: 100%;
+  background-color: #403940;
+  border: 1px solid #DB7093;
+  box-shadow: 13px 6px 23px 4px rgba(219,112,147,0.5);
+  transition: 0.5s ease-in-out;
+
+&:hover ${this} {
+    transform: translateY(-20px);
+  }
+ @media screen and (max-width: 975px) {
+     margin: 40px 0px;
+}
 `
 
-const Card = () => {
-    const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 15, tension: 350, friction: 40 } }))
+const Title = styled.div`
+    width: auto;    
+  font-size: 1.5rem;
+  font-weight: 800;
+`
+const Underline = styled.div`
+   width: 75%;
+   border: 1px solid #DB7093;
+`
+
+const Body = styled.div`
+    padding: 10px 3px;
+    font-size: 16px;
+
+    @media screen and (min-width: 975px) {
+     font-size: 18px;
+}
+`
+
+const Link = styled.div`
+    text-align: center;
+`
+
+const Card = ({ title, description, link }) => {
+
     return (
-        <animated.div
-            class="card"
-            onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-            onMouseLeave={() => set({ xys: [0, 0, 1] })}
-            style={{ transform: props.xys.interpolate(trans) }}
-        >
-        </animated.div>
+        <Container>
+            <Title>
+                {title}
+                <Underline />
+            </Title>
+            <Body>{description}</Body>
+            <Link><a href={link}>View Project</a></Link>
+        </Container>
     )
 }
 

@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { render } from 'react-dom'
 import { useTrail, animated } from 'react-spring'
 import './style.css'
 
 const items = ['Craig', 'Wickersham', 'Software', 'Developer']
 const config = { mass: 5, tension: 1500, friction: 200 }
 
-function Text() {
+const Text = () => {
     const [toggle, set] = useState(false)
     const trail = useTrail(items.length, {
         config,
