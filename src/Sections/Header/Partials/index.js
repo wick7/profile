@@ -6,31 +6,13 @@ const Head = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 25px;
-    border-bottom: 1px solid white;
-    background-color: white;
+    padding: 100px 0;
+    background-color: black;
 
-    @media only screen and (max-width: 830px) {
+    @media only screen and (max-width: 975px) {
         flex-direction: column;
     }
 `
 
-const ImageContainer = styled.div`
-    width: 100%;
-    height: auto;
-    text-align: center;
-`
 
-const Image = styled.img`
-    width: 500px;
-    height: 500px;
-
-    @media only screen and (max-width: 1000px) {
-        padding-top: 25px;
-        width: 400px;
-        height: 400px;
-    }   
-
-`
-
-export default { Head, ImageContainer, Image };
+export default Head;

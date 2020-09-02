@@ -5,8 +5,10 @@ import { Affix } from 'antd';
 
 //Sections
 import Intro from './Sections/Header';
-import Portfolio from './Sections/Portfolio/'
-import Contact from './Sections/Contact/'
+import About from './Sections/About/';
+import Portfolio from './Sections/Portfolio/';
+import Contact from './Sections/Contact/';
+
 
 const { Header, Footer, Content } = Layout;
 
@@ -20,6 +22,7 @@ const App = () => {
       </Affix>
       <Content>
         <Intro />
+        <About />
         <Portfolio />
         <Contact />
       </Content>

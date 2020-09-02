@@ -27,15 +27,19 @@ const Title = styled.div`
 `
 const Underline = styled.div`
    width: 75%;
-   border: 1px solid #DB7093;
+   border-bottom: 1px solid #DB7093;
 `
 
 const Body = styled.div`
     padding: 10px 3px;
     font-size: 16px;
 
-    @media screen and (min-width: 975px) {
-     font-size: 18px;
+     @media screen and (max-width: 975px) {
+    font-size: 14px;
+}
+
+  @media screen and (max-width: 375px) {
+    font-size: 10px;
 }
 `
 
