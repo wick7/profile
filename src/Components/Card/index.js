@@ -27,7 +27,7 @@ const Title = styled.div`
 `
 const Underline = styled.div`
    width: 75%;
-   border-bottom: 1px solid #DB7093;
+   border-bottom: 1px solid rgba(219,112,147,0.5);
 `
 
 const Body = styled.div`
@@ -56,7 +56,7 @@ const Card = ({ title, description, link }) => {
                 <Underline />
             </Title>
             <Body>{description}</Body>
-            <Link><a href={link}>View Project</a></Link>
+            <Link><a href={link} target={'_blank'} rel="noopener noreferrer">View Project</a></Link>
         </Container>
     )
 }
