@@ -4,7 +4,6 @@ import { Row, Col, Divider } from 'antd';
 import AboutImg from '../../Assets/about.svg'
 
 //Partials
-import styled from 'styled-components'
 import Content from './Partials/'
 
 //Components
