@@ -24,7 +24,6 @@ const TitleWrapper = styled.div`
     @media screen and (max-width: 975px) {
     font-size: 32px;
 }
-
 `
 
 const { ImageContainer, Image, Text, Wrapper, Section } = Content;
