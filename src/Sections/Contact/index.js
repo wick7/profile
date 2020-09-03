@@ -32,11 +32,10 @@ const { ImageContainer, Image, Text, Wrapper, Section } = Content;
 
 const Contact = () => {
 
-    const myEmail = 'wickersham.craig@gmail.com'
     const [clipBoardCopyMessage, setClipBoardCopyMessage] = useState()
 
     const handleClipBoard = () => {
-        navigator.clipboard.writeText(myEmail)
+        navigator.clipboard.writeText('wickersham.craig@gmail.com')
         setClipBoardCopyMessage('Copied!')
     }
 
