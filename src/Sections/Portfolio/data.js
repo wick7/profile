@@ -1,17 +1,17 @@
 let PORTFOLIO_DATA = [
     {
-        title: 'Node.js API',
-        description: 'You can pass a function to a styled component\'s template literal to adapt it based on its props.This button component has a primary state that changes its color.When setting the primary prop to true, we are swapping out its background and text color.',
-        link: '/'
+        title: 'Liri Node.js APP',
+        description: 'LIRI is a command line node app that takes in parameters and gives you back data. This app uses axios to retrieve data from Bands in Town, OMDB and Spotify.',
+        link: 'https://github.com/wick7/liri-node-app'
     },
     {
-        title: 'Node.js API',
-        description: 'You can pass a function to a styled component\'s template literal to adapt it based on its props.This button component has a primary state that changes its color.When setting the primary prop to true, we are swapping out its background and text color.',
-        link: '/'
+        title: 'Thee Store',
+        description: 'E-commerce Store built with React, Express.js, Node.js and Mongo. Ability to filter through products, view individual products and add or remove products from the cart. Complete with Stripe Checkout.',
+        link: 'https://theestore.herokuapp.com/'
     },
     {
-        title: 'Node.js API',
-        description: 'You can pass a function to a styled component\'s template literal to adapt it based on its props.This button component has a primary state that changes its color.When setting the primary prop to true, we are swapping out its background and text color.',
+        title: 'To Be Announced',
+        description: 'Work in progress.',
         link: '/'
     },
 ]
