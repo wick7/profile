@@ -6,6 +6,7 @@ const Head = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 98vh;
     padding: 100px 0;
     background-color: black;
 

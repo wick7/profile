@@ -26,7 +26,7 @@ const Text = styled.div`
 
 const Wrapper = styled.div`
     width: 100%;
-    padding: 0 20%;
+    padding: 100px 10%;
 
     @media screen and (max-width: 975px) {
     padding: 0;

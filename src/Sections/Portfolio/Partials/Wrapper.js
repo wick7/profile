@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   width: 100%;
-  height: auto;
-  padding: 40px 40px;
+  padding: 0 40px;
   display: flex;
   flex-direction: row;
+  margin: auto;
   
   @media screen and (max-width: 975px) {
     flex-direction: column;
