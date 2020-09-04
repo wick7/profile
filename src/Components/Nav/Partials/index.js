@@ -7,6 +7,7 @@ const NavigationSection = styled.div`
   align-items: center;
   width: 100%;
   height: 58px;
+  background-color: black;
 `
 const NavigationContainer = styled.div`
   display: flex;
@@ -25,6 +26,12 @@ const Logo = styled.div`
   height: 100%;
   background-color: rgba(219,112,147,0.5);
   z-index: 500;
+`
+
+const LogoBackGround = styled.div`
+  width: auto;
+  height: 100%;
+  background-color: white;
 `
 
 const Navigation = styled.div`
@@ -62,4 +69,4 @@ const NavLink = styled.div`
   margin: auto;
 `
 
-export default { NavigationSection, NavigationContainer, Logo, Navigation, NavItems, NavLink };
+export default { NavigationSection, NavigationContainer, Logo, LogoBackGround, Navigation, NavItems, NavLink };

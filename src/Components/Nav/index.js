@@ -1,16 +1,21 @@
 import React from 'react';
+import LightBulb from '../../Assets/lightbulb.svg'
 
+//Components
+import Image from '../Image.js'
 
 //Partials
 import NavLayout from './Partials/'
 
-const { NavigationSection, NavigationContainer, Logo, Navigation, NavItems, NavLink } = NavLayout;
+const { NavigationSection, NavigationContainer, Logo, LogoBackGround, Navigation, NavItems, NavLink } = NavLayout;
 
 const Nav = () => {
 
   return (
     <NavigationSection>
-      <Logo />
+      <LogoBackGround>
+        <Logo><Image src={LightBulb} /></Logo>
+      </LogoBackGround>
       <NavigationContainer>
         <Navigation>
           <NavItems activeClass="active" to="about" spy={true} smooth={true} offset={-50} duration={500}><NavLink>About</NavLink></NavItems>
