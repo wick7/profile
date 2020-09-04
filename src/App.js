@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "antd/dist/antd.css";
 import { Layout } from 'antd';
 import { Affix } from 'antd';
+import { Element } from 'react-scroll'
 
 
 //Components
@@ -17,18 +18,18 @@ import FooterContent from './Sections/FooterContent/';
 
 const { Footer, Content } = Layout;
 
-
 const App = () => {
+
   return (
-    <Layout>
+    <Layout >
       <Affix>
         <Nav />
       </Affix>
       <Content>
         <Header />
-        <About />
-        <Portfolio />
-        <Contact />
+        <Element name="about"><About /></Element>
+        <Element name="portfolio"><Portfolio /></Element>
+        <Element name="contact"><Contact /></Element>
       </Content>
       <Footer><FooterContent /></Footer>
     </Layout>

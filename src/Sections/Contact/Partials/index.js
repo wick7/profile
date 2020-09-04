@@ -34,10 +34,18 @@ const Wrapper = styled.div`
 }
 `
 const Section = styled.div`
-    
+    height: 100vh;
     width: 100%;
     padding: 25px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+    @media screen and (max-width: 975px) {
+    padding: 35px 0;
+    height: auto;
+}
 `
 
 export default { ImageContainer, Image, Text, Wrapper, Section };

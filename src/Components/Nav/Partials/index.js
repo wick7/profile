@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 
 const NavigationSection = styled.div`
   display: flex;
@@ -14,11 +15,16 @@ const NavigationContainer = styled.div`
   width: 100%;
   height: 100%;
   background-color: black;
+
+  @media screen and (max-width: 975px) {
+    display: none;
+}
 `
 const Logo = styled.div`
   width: 75px;
   height: 100%;
   background-color: rgba(219,112,147,0.5);
+  z-index: 500;
 `
 
 const Navigation = styled.div`
@@ -26,9 +32,13 @@ const Navigation = styled.div`
   height: 100%;
   display: flex;
   margin-right: 75px;
+
+  & > .active {
+    background-color: rgba(219,112,147,0.5);
+  }
 `
 
-const NavItems = styled.div`
+const NavItems = styled(Link)`
   color: white;
   height: 100%;
   width: 100px;

@@ -13,7 +13,7 @@ const Title = styled.div`
     font-size: 4rem;
     color: white;
     font-weight: 800;
-    margin: 0 20px;
+    margin: 0 20px 40px 20px;
 
     @media screen and (max-width: 975px) {
      margin: 40px 0px;
