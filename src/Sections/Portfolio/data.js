@@ -10,9 +10,9 @@ let PORTFOLIO_DATA = [
         link: 'https://theestore.herokuapp.com/'
     },
     {
-        title: 'To Be Announced',
-        description: 'Work in progress.',
-        link: '/'
+        title: 'My Portfolio Site (i.e. this site)',
+        description: 'Built from scratch with React. Uses Ant’d, Styled Components and React-Spring libraries. Deployed with AWS S3 and delivered through Cloudfront. Proper DNS to come!',
+        link: 'https://github.com/wick7/profile'
     },
 ]
 

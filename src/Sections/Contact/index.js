@@ -6,27 +6,10 @@ import GitHub from '../../Assets/github3.svg'
 import Email from '../../Assets/email.svg'
 
 //Partials
-import styled from 'styled-components'
 import Content from './Partials/'
 
-//Components
 
-
-const TitleWrapper = styled.div`
-    position: relative;
-    top: -8px;  
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    font-size: 48px;
-    color: rgba(219,112,147,0.5);
-    @media screen and (max-width: 975px) {
-    font-size: 32px;
-}
-`
-
-const { ImageContainer, Image, Text, Wrapper, Section } = Content;
+const { TitleWrapper, Image, Wrapper, Section } = Content;
 
 
 const Contact = () => {

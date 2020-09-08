@@ -11,6 +11,7 @@ const Head = styled.div`
     background-color: black;
 
     @media only screen and (max-width: 975px) {
+        padding: 0 0 100px 0;
         flex-direction: column;
     }
 `
