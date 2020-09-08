@@ -1,8 +1,18 @@
 import styled from 'styled-components'
 
-const ImageContainer = styled.div`
-    height: auto;
-    padding: 0;
+
+const TitleWrapper = styled.div`
+    position: relative;
+    top: -8px;  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    color: rgba(219,112,147,0.5);
+    @media screen and (max-width: 975px) {
+    font-size: 32px;
+}
 `
 
 const Image = styled.img`
@@ -10,19 +20,6 @@ const Image = styled.img`
     height: auto;
     padding: 0;
     cursor: pointer;
-`
-
-const Text = styled.div`
-  font-size: 16px;
-
-
-  @media screen and (max-width: 975px) {
-    font-size: 14px;
-}
-
-  @media screen and (max-width: 375px) {
-    font-size: 10px;
-}
 `
 
 const Wrapper = styled.div`
@@ -48,4 +45,4 @@ const Section = styled.div`
 }
 `
 
-export default { ImageContainer, Image, Text, Wrapper, Section };
+export default { TitleWrapper, Image, Wrapper, Section };

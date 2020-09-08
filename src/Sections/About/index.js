@@ -6,8 +6,6 @@ import AboutImg from '../../Assets/about.svg'
 //Partials
 import Content from './Partials/'
 
-//Components
-
 
 const { ImageContainer, Image, Text, Wrapper, Section } = Content;
 
