@@ -16,7 +16,7 @@ const About = () => {
                 <Row gutter={[16, 16]}>
                     <Col span={12}>
                         <Divider>About Me</Divider>
-                        <Text>Experienced React developer with a record for making designs come to life. Familiarity with integrating and creating REST APIs with React and Redux. Ability to work collaboratively with fellow developers and independently to deliver robust web applications and solutions.</Text>
+                        <Text>Experienced React developer with a record for making designs come to life. Familiarity with integrating and creating REST APIs with React and Redux. Able to work collaboratively with fellow developers and independently to deliver robust web applications and solutions.</Text>
                     </Col>
                 </Row>
                 <Row >
