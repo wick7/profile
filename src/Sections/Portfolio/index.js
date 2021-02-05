@@ -13,7 +13,7 @@ const { Wrapper, Title } = Layout;
 const Portfolio = () => {
     return (
         <Section bgColor={'black'}>
-            <Wrapper><Title>Portfolio</Title></Wrapper>
+            <Title>Portfolio</Title>
             <Wrapper>
                 {PORTFOLIO_DATA.map((item, i) => {
                     return (
