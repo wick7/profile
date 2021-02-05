@@ -5,14 +5,14 @@ let PORTFOLIO_DATA = [
         link: 'https://github.com/wick7/liri-node-app'
     },
     {
-        title: 'Thee Store',
-        description: 'E-commerce Store built with React, Express.js, Node.js and Mongo. Ability to filter through products, view individual products and add or remove products from the cart. Complete with Stripe Checkout.',
-        link: 'https://theestore.herokuapp.com/'
+        title: 'Civic',
+        description: 'An application that takes in an address or GPS location and returns the Federal Senators and Congressional Representative for a given location. Implemented with React.js on the front end, and Google’s Civic API for the provided data. Deployed with AWS Amplify. ',
+        link: 'https://d1ir2b6gdws0ch.cloudfront.net/'
     },
     {
-        title: 'My Portfolio Site (i.e. this site)',
-        description: 'Built from scratch with React. Uses Ant’d, Styled Components and React-Spring libraries. Deployed with AWS S3 and delivered through Cloudfront. Proper DNS to come!',
-        link: 'https://github.com/wick7/profile'
+        title: 'Sandbar Resorts',
+        description: 'A landing page for a fictitious beach resort business. Implemented with  React.js and Styled Components. Deployed with AWS Amplify.',
+        link: 'https://d7ijf8a969p53.cloudfront.net'
     },
 ]
 

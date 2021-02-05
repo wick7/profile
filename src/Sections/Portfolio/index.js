@@ -8,23 +8,25 @@ import Layout from './Partials/';
 import Section from './../../Components/Section/';
 import Card from './../../Components/Card/';
 
-const { Wrapper, Title } = Layout;
+const { Wrapper, Title, Container } = Layout;
 
 const Portfolio = () => {
     return (
         <Section bgColor={'black'}>
-            <Wrapper><Title>Portfolio</Title></Wrapper>
-            <Wrapper>
-                {PORTFOLIO_DATA.map((item, i) => {
-                    return (
-                        <Card
-                            title={item.title}
-                            description={item.description}
-                            link={item.link}
-                        />
-                    )
-                })}
-            </Wrapper>
+            <Container>
+                <Title>Portfolio</Title>
+                <Wrapper>
+                    {PORTFOLIO_DATA.map((item, i) => {
+                        return (
+                            <Card
+                                title={item.title}
+                                description={item.description}
+                                link={item.link}
+                            />
+                        )
+                    })}
+                </Wrapper>
+            </Container>
         </Section>
     )
 }
